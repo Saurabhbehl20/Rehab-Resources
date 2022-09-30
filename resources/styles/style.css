@@ -1,0 +1,1682 @@
+/*************************
+********** Fonts **********
+*************************/
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:wght@400;500;700;800;900&family=Montserrat:wght@600;700&display=swap'); */
+
+@font-face {
+    font-family: "AvenirLTStd-Book";
+    src: url(../fonts/AvenirLTStd-Book.ttf) format("truetype");
+    font-display: swap;
+}
+
+
+/*************************
+********** Global **********
+*************************/
+
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    color: #1b1b1b;
+    margin: 0;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+a {
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.welcome-section p,
+.why-choose-us-section p,
+.join-us-section p,
+.full-width-section p,
+.about-overview-section p,
+.two-column-content-section p,
+.therapist-profile p,
+.about_intro_zone p {
+    padding-bottom: 20px;
+}
+
+
+/* header */
+
+header {
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    transition: all 0.3s linear;
+}
+
+.primary-header .slick-prev {
+    left: 0;
+    z-index: 99;
+}
+
+.primary-header .slick-next:before,
+.primary-header .slick-prev:before,
+.therapy-provision-section .slick-prev:before,
+.therapy-provision-section .slick-next:before,
+.services-options-section .slick-prev:before,
+.services-options-section .slick-next:before {
+    color: #fff0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+.primary-header .slick-prev:before,
+.therapy-provision-section .slick-prev:before {
+    background-image: url('../images/left-white-triangle.svg');
+}
+
+.primary-header .slick-next:before,
+.therapy-provision-section .slick-next:before {
+    background-image: url('../images/right-white-triangle.svg');
+}
+
+.services-options-section .slick-prev:before {
+    background-image: url('../images/left-blue-triangle1.svg');
+}
+
+.services-options-section .slick-next:before {
+    background-image: url('../images/right-Blue-triangle.svg');
+}
+
+.full-white-pattern-circle {
+    background-image: url('../images/white_dotted_line_fluidshape_dd.jpg');
+}
+
+.full-white-pattern-double-circle {
+    background-image: url('../images/white_dotted_line_fluidshape.jpg');
+}
+
+.orange_with_single_circle {
+    background-image: url('../images/org-bg.jpg');
+}
+
+.therapy-provision-section .slick-prev:before,
+.therapy-provision-section .slick-next:before,
+.services-options-section .slick-next:before,
+.services-options-section .slick-prev:before {
+    font-size: 14px;
+}
+
+.secondary-header li a {
+    color: #cad2ff;
+}
+.secondary-header li a:hover {
+    text-decoration: underline;
+}
+.search-menu i {
+    color: #222a59;
+}
+
+.main-header ul li a {
+    padding: 40px 18px;
+}
+
+.secondary-header i {
+    padding-right: 5px;
+}
+
+.social-icons-copyrights li {
+    margin: 0 12px 0 12px;
+    padding: 0px 6px;
+}
+
+.main-header #searchform {
+    display: flex;
+    align-items: center;
+    padding-bottom: 18px;
+    position: absolute;
+    right: 35px;
+    overflow: hidden;
+    width: 0px;
+    transition: width 0.5s ease-in-out;
+    top: 0px;
+    z-index: 9;
+    padding: 0;
+    background-color: #fff;
+}
+
+.main-header .close-form .img-search {
+    width: 15px;
+    height: 15px;
+}
+
+.input_search .img-search {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+}
+
+.main-header .close-form .img-close {
+    width: 15px;
+    height: 12px;
+}
+
+.search-open form {
+    width: 92% !important;
+}
+
+.search-menu form input {
+    margin: 10px;
+    border-bottom: 1px solid #8d8d8d;
+    display: block;
+    width: 96%;
+}
+
+.search-menu .input_search i {
+    z-index: 1;
+}
+
+.search-menu img {
+    color: #222a59;
+}
+
+.search-open .close-form .img-close {
+    display: block;
+}
+
+.search-open .close-form .img-search {
+    display: none;
+}
+
+.pagination a.page-numbers {
+    margin: 0 10px;
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+.pagination .page-numbers.current,
+a.next.page-numbers,
+a.prev.page-numbers {
+    color: var(--bg-royal-blue);
+    opacity: 1;
+    font-weight: 700;
+}
+
+a.prev.page-numbers {
+    margin-right: 50px;
+}
+
+a.next.page-numbers {
+    margin-left: 50px;
+}
+
+
+/* a.next.page-numbers {
+    margin-left: 10px;
+} */
+
+
+/* sub menu */
+
+header .sub-menu-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header .sub-menu li a {
+    text-underline-offset: 20px !important;
+}
+
+.main-header .mobile-menu-nav ul li a {
+    padding: 20px 40px 20px 20px;
+    display: block;
+    text-align: left;
+}
+
+
+/* footer */
+
+footer .footer-contact-menu i {
+    padding-right: 8px;
+}
+
+.social-icons-copyrights li:nth-child(2) {
+    padding: 0px 8.5px;
+}
+
+.social-icons-copyrights li:nth-child(3) {
+    padding: 0px 5px;
+}
+
+.social-icons-copyrights li:last-child {
+    padding: 0px 4px;
+}
+
+#techyscouts-logo {
+    display: inline-block;
+    fill: currentColor;
+    height: 1em;
+    width: auto;
+    vertical-align: middle;
+}
+
+.techyscouts-credit-link:hover #techyscouts-logo-heart,
+.techyscouts-credit-link:focus #techyscouts-logo-heart {
+    animation: ts-heart-beat 2s infinite ease-in-out 0.6s;
+}
+
+.techyscouts-credit-link:hover #techyscouts-logo-text,
+.techyscouts-credit-link:focus #techyscouts-logo-text {
+    animation: ts-draw-logo 2s forwards;
+}
+
+.techyscouts-credit-link:hover #techyscouts-logo-line-1,
+.techyscouts-credit-link:hover #techyscouts-logo-line-2,
+.techyscouts-credit-link:focus #techyscouts-logo-line-1,
+.techyscouts-credit-link:focus #techyscouts-logo-line-2 {
+    animation: ts-swoop-down 0.5s forwards ease-out;
+}
+
+.techyscouts-credit-link:hover #techyscouts-logo-line-2,
+.techyscouts-credit-link:focus #techyscouts-logo-line-2 {
+    animation-name: ts-swoop-up;
+}
+
+@keyframes ts-heart-beat {
+    5% {
+        transform: scale(1.1);
+        fill: #c7315f;
+    }
+    10% {
+        transform: scale(0.9);
+    }
+    15% {
+        transform: scale(1.2);
+        fill: #c7315f;
+    }
+    40% {
+        transform: scale(1);
+        stroke-width: 0;
+    }
+}
+
+@keyframes ts-draw-logo {
+    0% {
+        stroke-dasharray: 2600;
+        stroke-dashoffset: 2600;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes ts-swoop-down {
+    0% {
+        transform: translateY(-100%) rotate(10deg);
+    }
+}
+
+@keyframes ts-swoop-up {
+    0% {
+        transform: translateY(100%) rotate(-10deg);
+    }
+}
+
+.social-icons-copyrights p {
+    font-weight: 800;
+}
+
+footer {
+    background-image: url('../images/footer_bg.jpg');
+}
+
+.secondary-header ul li a:hover,
+header .navbar-nav .menu-item.active a:not(.sub-menu a),
+.our-therapist-section {
+    color: #d47a34;
+}
+
+
+/* HERO SECTION */
+
+.hero-section .carousel-inner:before,
+.inner-hero-section:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+}
+
+.inner-hero-section:before {
+    background: hsl(219deg 100% 18% / 80%);
+}
+
+.hero-section .carousel-inner:before {
+    opacity: 0.4;
+    background: hsl(219deg 100% 18% / 40%);
+}
+
+.single-hero-section:before {
+    opacity: 1;
+}
+
+.therapy-provision-section,
+.hero-section,
+.inner-hero-section,
+.bg-overlay-clip-path {
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%, 0% 100%);
+}
+
+.trapezium {
+    height: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-bottom: 220px solid #00205c;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+}
+
+.blogs-content p {
+    display: flex;
+    align-items: flex-start;
+    padding: 5px 0;
+}
+
+.blogs-inner-col a:hover {
+    color: var(--bg-royal-blue);
+}
+
+
+/* annual-impacts-section */
+
+
+/* welcome section */
+
+p span {
+    color: var(--bg-dark-orange);
+}
+
+.full-width-section p span {
+    margin-top: 1.5rem;
+}
+
+.therapy-provision-section p {
+    font-family: 'Inter', sans-serif;
+}
+
+.outpatient-locations-section i,
+.therapy-provision-section p,
+.two-column-content-section i {
+    color: var(--bg-dark-navy);
+}
+
+.outpatient-locations-section i,
+.two-column-content-section i,
+.location-content i,
+.blogs-content i {
+    padding-right: 10px;
+}
+
+.blogs-content {
+    font-size: 13px;
+}
+
+.outpatient-locations-section a.bg-dark-orange {
+    width: 192px;
+}
+
+.therapist-profile p,
+.location-content p {
+    display: flex;
+    align-items: baseline;
+}
+
+.therapist-profile p,
+.location-content p,
+.blogs-inner-col p {
+    text-align: left;
+}
+
+.slick-next,
+.slick-prev {
+    z-index: 999;
+}
+
+.hero-section .slick-next {
+    right: 0;
+}
+
+.hero-section .slick-prev {
+    left: 0;
+}
+
+.hero-section .slick-dots li.slick-active button:before,
+.hero-section .slick-dots li button:before {
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #0000;
+    opacity: 1;
+}
+
+.hero-section .slick-dots li.slick-active button:before {
+    background-image: url(../images/org-triangle.svg);
+    width: 20px;
+}
+
+.hero-section .slick-dots li button:before {
+    background-image: url(../images/white-ellipse.svg);
+    content: '';
+    width: 16px;
+    height: 16px;
+}
+
+.hero-section a {
+    padding: 10px 25px 10px 25px;
+    transition: all 0.3s;
+}
+
+.hero-section a:hover:after {
+    background-image: url(../images/blue_hover_button.svg);
+}
+
+.impacts-inner-col,
+.blogs-inner-col,
+.blogs-inner-col .feature_img,
+.our-therapist-section .bg-white {
+    box-shadow: 0px 5px 10px -1px #0000004a;
+}
+
+.hero-section a:before {
+    background-image: url(../images/hero-org-button.svg);
+    content: '';
+    background-size: cover;
+    background-position: 100%;
+    position: absolute;
+    right: -25px;
+    height: 48px;
+    display: block;
+    width: 40px;
+    top: 0;
+    transition: all 0.3s;
+}
+
+.hero-section a:hover:after {
+    border-left: 27px solid #00205c;
+}
+
+.hero-section a:after {
+    border-left: 25px solid #d47a34;
+    content: "";
+    position: absolute;
+    border-bottom: 25px solid transparent;
+    border-top: 25px solid transparent;
+    height: 0px;
+    width: 0px;
+    margin-right: -10px;
+    right: 0;
+    transition: all 0.3s;
+    top: -1px;
+}
+
+.hero-section a:hover,
+.hero-section a:active {
+    background: #00205c;
+}
+
+
+/* Testimonials Section */
+
+.quote-img:before,
+.expertise-list-section:after,
+.certifications-list:after {
+    display: block;
+    position: absolute;
+    background-size: cover;
+    content: '';
+}
+
+.quote-img:before {
+    background-image: url('../images/quote-icon.png');
+    width: 35px;
+    height: 38px;
+    top: 45px;
+    left: 10px;
+}
+
+.expertise-list-section:after {
+    background-image: url(../images/blue_dot.png);
+    width: 25px;
+    height: 25px;
+    bottom: -15px;
+    right: 20%;
+}
+
+.certifications-list:after {
+    z-index: -1;
+    background-image: url(../images/red-icon-right.svg);
+    width: 125px;
+    height: 125px;
+    bottom: 65px;
+    right: 0px;
+}
+
+.testimonials-section .slick-slide {
+    margin: 45px 15px 45px;
+}
+
+.testimonials-section .slick-list {
+    margin: 0 -15px;
+}
+
+.testimonials-section .slick-list.draggable .slick-track {
+    display: flex !important;
+}
+
+.testimonials-section .slick-dots li button:before {
+    font-size: 16px;
+    color: #fff;
+}
+
+
+/* SERVICES PAGE */
+
+
+/* .about_intro_zone {
+    background-image: url(../images/services-section_1.jpg);
+} */
+
+.about_intro_zone {
+    background-image: url(../images/white_dotted_line_fluidshape-about.png);
+}
+
+.career-intro,
+.single-therapist .about-team-section {
+    background-image: url(../images/career_white_dotted_line_fluidshape.png);
+}
+
+.about_full_width_zone {
+    background-image: url(../images/overview.png);
+}
+
+.no-image {
+    background-image: none!important;
+}
+
+.bg_orange_pattern,
+.bg_orange_yellow_pattern {
+    background-image: url(../images/section-2.png);
+}
+
+.two-column-content-with-white-pattern,
+.services-zone-section {
+    background-image: url(../images/types.png);
+}
+
+.bg_white_pattern {
+    background-image: url(../images/white-dot-line.jpg);
+}
+
+.accordion-zone .panel {
+    background-color: #20407C;
+}
+
+.two-column-content-section {
+    z-index: 1;
+}
+.two-column-with-bg-image-blue-pattren-section {
+    z-index: 10;
+}
+
+.two-column-with-bg-image-orange-pattren-section:after {
+    content: '';
+    background-image: url(../images/orange-shapes.svg);
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: -webkit-fill-available;
+    background-repeat: no-repeat;
+    top: 0px;
+    left: 0;
+    z-index: 1;
+    background-size: cover;
+    margin-top: -89px;
+}
+
+.bg-overlay-clip-path .col-start-1.col-end-7:before {
+    content: '';
+    background-image: url(../images/red-icon.svg);
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 100px;
+    background-repeat: no-repeat;
+    top: 100px;
+    left: 0px;
+    background-size: auto;
+}
+
+.two-column-with-bg-image-blue-pattren-section:before {
+    content: '';
+    background-image: url(../images/org-blue-icon.svg);
+    position: absolute;
+    display: block;
+    width: 520px;
+    height: 100%;
+    background-repeat: no-repeat;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+    background-position: right;
+    background-size: contain;
+}
+
+.two-column-with-bg-image-orange-pattren-section:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+    background: linear-gradient(89.62deg, #DD833D 35.68%, rgba(221, 131, 61, 0) 60.73%);
+    z-index: 1;
+}
+
+.occupational-therapy-banner {
+    margin-top: -90px;
+}
+
+.bg-overlay-clip-path:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+    background: linear-gradient(90.62deg, #39517e 23.68%, rgba(221, 131, 61, 0) 50.73%);
+    z-index: -1;
+}
+
+.four-column-section {
+    background-image: url(../images/Triangle_pattern_services_bg.jpg);
+}
+
+.expertise-section {
+    background-image: url(../images/Triangle_pattern_services_bg.jpg);
+}
+
+.expertise-list-section {
+    background-image: url(../images/expertise_org_bg.jpg);
+}
+
+.about_section {
+    background-image: url(../images/about.png);
+}
+
+.about-overview-section {
+    background-image: url(../images/overview.png);
+}
+
+.outpatient-locations-section {
+    background-image: url(../images/org_bg_loc.jpg);
+}
+
+.our-therapist-section {
+    background-image: url(../images/Therapists-background.png);
+}
+
+.about-team-section-main,
+.single-content-section {
+    background-image: url(../images/Leadership-backround.png);
+}
+.double-circles-with-icons {
+    background-image: url(../images/c-backround.jpg);
+}
+.bg_orange_red_pattern,
+.services-offered-section {
+    background-image: url(../images/services-icon-background.png);
+}
+
+.white_with_double_circle {
+    background-image: url(../images/white-dotted-line.png);
+}
+
+.single-outpatient-clinics .two-column-content-section {
+    background-image: url(../images/single-services-section.jpg);
+}
+
+.two-column-content-with-orange-pattern {
+    background-image: url(../images/section-2.png);
+}
+
+.not_found_section {
+    background-image: url(../images/404_bg.jpg);
+}
+
+.two-column-content-with-white-pattern p,
+.services-zone-section p,
+.four-column-section p {
+    color: var(--bg-dark-navy);
+}
+
+.three-column-content-section {
+    background-image: url(../images/overview-2.jpg);
+}
+
+.plain-pattern {
+    background-image: url(../images/plain-pattern.png);
+}
+
+.accordion-zone {
+    background-image: url(../images/bg.jpg);
+}
+
+.search-results-section {
+    background-image: url(../images/blogs-bg.jpg);
+}
+
+.blogs-section {
+    background-image: url(../images/blog-background.png);
+}
+
+.therapy-types-section p,
+.therapy-programs-section p,
+.expertise-section p {
+    color: var(--bg-dark-navy);
+}
+
+.main-header {
+    box-shadow: 0px 2px 7px #b9b9b9;
+    background: #fff;
+}
+
+.read-less i {
+    padding-left: 15px;
+}
+
+.two-column-content-with-white-pattern ul i,
+.two-column-content-with-orange-pattern ul i {
+    padding-right: 15px;
+}
+
+.yellow-icon .container:before {
+    content: '';
+    background-image: url(../images/Who-we-Serve-yellow.svg);
+    position: absolute;
+    right: 0px;
+    display: block;
+    width: 100px;
+    height: 140px;
+    background-repeat: no-repeat;
+    top: -60px;
+}
+
+.yellow-icon.before-icon-up .container:before {
+    top: -70px;
+}
+
+.yellow-icon.no-before-icon .container:before {
+    display: none;
+}
+
+.right-bottom-before-icon .container:before {
+    top: -80px;
+}
+
+.form-zone-section input,
+.form-zone-section textarea {
+    border: 1px solid var(--bg-dark-orange);
+    font-size: 16px;
+    font-style: normal;
+    padding: 10px 20px;
+    width: 100%;
+    color: #000;
+}
+.form-zone-section ::placeholder {
+    font-style: italic;
+}
+.wpcf7 form.sent .wpcf7-response-output,
+.wpcf7 form.invalid .wpcf7-response-output {
+    border: none !important;
+}
+
+.form-zone-section form.wpcf7-form {
+    padding-top: 50px;
+}
+.blogs-content p a:not(:first-of-type) {
+    padding-left: 7px;
+}
+.form-zone-section input.wpcf7-submit {
+    font-family: 'Inter', sans-serif;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    font-weight: 700;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    background: var(--bg-dark-orange);
+    color: #fff;
+    font-style: normal;
+    width: auto;
+    margin-top: 40px;
+    border: none;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.form-zone-section input.wpcf7-submit:hover {
+    background: var(--bg-dark-navy);
+}
+
+.form-zone-section textarea {
+    height: 160px;
+}
+
+.wpcf7-spinner {
+    display: none;
+}
+
+.accordion-row.active .accordion-title {
+    background: var(--bg-dark-orange);
+    border: none;
+}
+
+.accordion-row.active .accordion-title:after,
+.accordion-row.active .accordion-title {
+    color: #fff;
+}
+
+.accordion-zone a i {
+    padding-left: 10px;
+}
+
+.accordion-zone p i {
+    padding-right: 10px;
+}
+
+.accordion-row.active .accordion-title:after {
+    content: '\f0d8';
+}
+
+.accordion-title:after {
+    content: '\f0d7';
+    position: absolute;
+    display: block;
+    right: 20px;
+    font-family: 'Font Awesome 5 Pro';
+    top: 20px;
+    font-size: 36px;
+    color: var(--bg-dark-orange);
+}
+.panel {
+    display: none;
+    overflow: hidden;
+}
+
+.tab button.active,
+.tab button:hover {
+    background-color: var(--bg-dark-orange);
+    color: #fff;
+}
+
+.tab button {
+    transition: 0.3s;
+}
+
+
+/* ACF CSS */
+
+.wysiwig_single_lists ul {
+    padding-left: 1.75rem;
+    list-style-type: disc;
+}
+
+.wysiwig_single_lists li {
+    padding-bottom: 1rem;
+}
+
+.wysiwig_double_lists ul li {
+    display: flex;
+    padding-bottom: 1rem;
+    align-items: baseline;
+}
+
+.blogs-inner-col .blogs-content img,
+.single-hero-section .blogs-content img {
+    display: inline;
+    padding-right: 7px;
+}
+
+.about-team-section .wysiwyg p {
+    padding-bottom: 20px;
+}
+
+.outpatient-locations-section .therapist-profile p a {
+    word-break: break-word;
+}
+
+.orange_with_single_circle {
+    z-index: 12;
+    position: relative;
+}
+.single-post .blogs-content p {
+    padding: 5px 5px;
+}
+/* location page */
+
+#wpsl-search-wrap .wpsl-input label, #wpsl-search-wrap div label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+.wpsl-search {
+    background: var(--bg-dark-orange);
+    color: #FFF;
+    padding: 20px;
+}
+#wpsl-gmap {
+    border: 2px solid var(--bg-dark-orange);
+}
+#wpsl-search-btn, #wpsl-search-wrap div {
+    margin-bottom: 0;
+}
+.wpsl-store-location strong {
+    text-align: center;
+    display: block;
+}
+#wpsl-search-btn, #wpsl-search-wrap input {
+    border: 1px solid #d2d2d200;
+    border-radius: 0;
+}
+#wpsl-search-btn {
+    color: #ffffff;
+    background-color: var(--bg-royal-blue);
+    background-image: none;
+    border: none!important;
+    width: 110px;
+    border-radius: 0!important;
+    padding: 10px;
+}
+#wpsl-search-wrap .wpsl-select-wrap {
+    margin-right: 11px;
+    margin-left: 0px;
+}
+.wpsl-dropdown {
+    border-radius: 0;
+}
+/***** MEDIA QUERIES *****/
+
+@media only screen and (min-width: 470px) and (max-width: 1023px) {
+    .search-open form {
+        width: 96% !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .quote-img:before {
+        top: 50px;
+        left: 25px;
+    }
+    .yellow-icon .container:before {
+        width: 150px;
+        height: 140px;
+        top: -90px;
+    }
+    .yellow-icon.right-bottom-before-icon .container:before {
+        top: -115px;
+    }
+    .yellow-icon.before-icon-up .container:before {
+        top: -90px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .menu-item-has-children.menu-open:before {
+        content: "\f0d8";
+    }
+    .wpsl-search-btn-wrap {
+        display: block;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .inner-hero-section .blogs-content {
+        position: relative;
+        display: flex;
+    }
+    .two-column-with-bg-image-orange-pattren-section:after {
+        margin-top: -100px;
+    }
+    .two-column-with-bg-image-blue-pattren-section .bg-overlay-clip-path {
+        -webkit-clip-path: none;
+    }
+    .bg-overlay-clip-path .col-start-1.col-end-7:before,
+     .two-column-with-bg-image-blue-pattren-section:before {
+       display: none;
+   }
+    .occupational-therapy-banner .two-col-inner {
+        background: var(--bg-dark-blue);
+    }
+    .occupational-therapy-banner .two-col-inner h2, .occupational-therapy-banner .two-col-inner {
+        color: #fff!important;
+    }
+    .two-column-with-bg-image-orange-pattren-section .two-col-inner.relative {
+        background: var(--bg-dark-orange);
+    }
+    .occupational-therapy-banner, .two-column-with-bg-image-orange-pattren-section {
+        margin-top: 0!important;
+        padding: 0!important;
+    }
+    .two-column-with-bg-image-blue-pattren-section .bg-overlay-clip-path:before,
+    .two-column-with-bg-image-blue-pattren-section .two-col-inner,
+     .two-column-with-bg-image-orange-pattren-section {
+        background-image: none!important;
+    }
+    .two-column-with-bg-image-blue-pattren-section .bg-overlay-clip-path:before,
+    .two-column-with-bg-image-blue-pattren-section .two-col-inner {
+        background: var(--bg-royal-blue);
+    }
+    .bg-overlay-clip-path .col-start-1.col-end-7:before {
+        z-index: -1;
+    }
+    .two-column-with-bg-image-blue-pattren-section:before {
+        width: 610px;
+        top: 40px;
+    }
+    .hero-section .carousel-inner {
+        height: 570px;
+    }
+    .form-zone-section input,
+    .form-zone-section textarea {
+        margin-bottom: 20px;
+    }
+    .menu-item-has-children:before {
+        content: "\f0d7";
+    }
+    .menu-item-has-children:before {
+        position: absolute;
+        font-family: "Font Awesome\ 5 Pro";
+        font-size: 15px;
+        color: #ffffff;
+        right: 19px;
+        top: 20px;
+        font-weight: 700;
+    }
+    .menu-item-has-children {
+        position: relative;
+    }
+    .sub-menu {
+        display: none;
+    }
+    section.hero-section,
+    section.why-rehab-section,
+    .about_section,
+    .map-location-section,
+    .two-column-with-bg-image-blue-pattren-section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    section,
+    .hero-section .carousel-inner,
+    .why-rehab-section .whyrehab-content,
+    .about-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer-contact-menu {
+        padding: 0 20px;
+    }
+    footer {
+        background-image: url('../images/footer-bg-mb.png');
+    }
+    .annual-impacts-section {
+        background-image: url(../images/anual-impact.jpg);
+    }
+    .welcome-section {
+        background-image: url(../images/welcome.jpg);
+    }
+    .therapy-provision-section {
+        background-image: url(../images/therapy-mb.png);
+    }
+    .services-options-section {
+        background-image: url(../images/options-mb.png);
+    }
+    .leadership-section {
+        background-image: url(../images/org_dotted.png);
+        background-color: #fff;
+    }
+    .why-rehab-section {
+        background-image: url(../images/why-rehab-mb.jpg);
+    }
+    .join-us-section {
+        background-image: url(../images/join-mb.jpg);
+    }
+    .services-options p {
+        line-height: 22px;
+    }
+    .leadership-section {
+        background-size: 100% 100% !important;
+    }
+    .therapy-provision-section .slick-next,
+    .therapy-provision-section .slick-prev,
+    .services-options-section .slick-next,
+    .services-options-section .slick-prev {
+        bottom: -70px;
+        top: auto;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .therapy-provision-section .slick-next,
+    .services-options-section .slick-next {
+        left: 45px!important;
+    }
+    .therapy-provision-section .slick-prev,
+    .services-options-section .slick-prev {
+        right: 45px!important;
+    }
+    .therapy-provision-section .slick-list,
+    .services-options-section .slick-list {
+        overflow-x: clip;
+        overflow-y: unset;
+    }
+    section.hero-section .slick-dots {
+        bottom: 60px;
+    }
+    .primary-header .slick-next:before,
+    .primary-header .slick-prev:before {
+        font-size: 12px;
+    }
+    .menu-item.search-menu {
+        padding: 20px 18px 20px 40px;
+    }
+    .main-header ul li a {
+        padding: 0;
+    }
+    body.show {
+        overflow: hidden;
+    }
+    .primary-header .slick-next,
+    .primary-header .slick-prev {
+        margin-top: 5px;
+    }
+    .primary-header .slick-next {
+        right: 0;
+    }
+    .primary-header h2 b {
+        display: block;
+    }
+    .primary-header i {
+        right: 10px;
+        top: -10px;
+    }
+    .two-column-with-bg-image-orange-pattren-section {
+        background-position: 100%;
+    }
+    .sidenav.show .mobile-menu-nav {
+        display: block;
+    }
+    .sidenav.show {
+        height: 100%;
+    }
+    .sidenav {
+        left: 0;
+        height: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 99;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+        background: var(--bg-dark-navy);
+        -webkit-overflow-x: hidden;
+        padding-top: 15px;
+        transition: all 0.3s linear;
+        opacity: 0;
+        padding-bottom: 180px;
+        z-index: -1;
+        visibility: hidden;
+    }
+    .sidenav.show {
+        height: 100%;
+        visibility: visible;
+        opacity: 1;
+        z-index: 99;
+    }
+    #main.show_slider .sidenav {
+        top: 175px;
+    }
+    #main:not(.show_slider) .sidenav {
+        top: 93px;
+    }
+    .navbar-toggler {
+        transition: opacity 1s ease-in-out !important;
+    }
+    header .mobile-menu-nav.show .collapse:not(.show) {
+        display: block;
+    }
+    .show .navbar-toggler {
+        float: right;
+        top: 0;
+        position: unset;
+    }
+    .site-logo img {
+        width: 200px;
+    }
+    li.address {
+        width: 100%;
+        text-align: center;
+    }
+    .desktop {
+        display: none;
+    }
+    .join-us-section p {
+        text-align: left;
+    }
+    .testimonials-section,
+    .form-zone-section {
+        background-image: url('../images/blue_bg_mobile.png');
+    }
+    .search-menu form input {
+        padding-bottom: 3px;
+    }
+    .wysiwig_content h1,
+    .wysiwig_content h2 {
+        font-size: 30px!important;
+        line-height: 50px;
+    }
+    .wysiwig_content h3 {
+        font-size: 28px!important;
+        line-height: 42px;
+    }
+    .wysiwig_content h4,
+    .wysiwig_content h5,
+    .wysiwig_content h6 {
+        font-size: 16px!important;
+        line-height: 26px;
+    }
+    .therapist-profile-main {
+        height: unset !important;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .wysiwig_content h1 {
+        font-size: 56px!important;
+        line-height: 58px;
+    }
+    #wpsl-search-wrap .wpsl-select-wrap {
+        margin-left: 10px;
+    }
+    .wpsl-search-btn-wrap {
+        position: absolute;
+        right: 0;
+    }
+    .two-column-with-bg-image-blue-pattren-section:before {
+        right: 72px;
+    }
+    .wysiwig_content h2 {
+        font-size: 40px!important;
+        line-height: 50px;
+    }
+    .wysiwig_content h3 {
+        font-size: 35px!important;
+        line-height: 50px;
+    }
+    .wysiwig_content h4 {
+        font-size: 24px!important;
+        line-height: 34px;
+    }
+    .wysiwig_content h5,
+    .wysiwig_content h6 {
+        font-size: 16px!important;
+        line-height: 26px;
+    }
+    .half {
+        float: left;
+    }
+    .primary-header i {
+        right: 30px;
+    }
+    .full {
+        width: 98.3%;
+    }
+    .half.half-left {
+        margin-right: 20px;
+    }
+    .half {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    .search-menu button img {
+        position: relative;
+        top: 0;
+        right: 10px;
+    }
+    .blogs-section .no_post_image {
+        margin-top: 10px;
+    }
+    .certifications-list:after {
+        right: -80px;
+    }
+    .two-column-with-bg-image-no-pattren-section p {
+        padding-right: 2rem;
+    }
+    .hero-section a:after {
+        border-left: 27px solid #d47a34;
+        border-bottom: 27px solid transparent;
+        border-top: 27px solid transparent;
+        margin-right: -27px;
+        top: 0;
+    }
+    header .sub-menu-wrapper {
+        display: none;
+        top: 100%;
+        z-index: 9999;
+    }
+    header .menu-item.menu-item-has-children:hover .sub-menu-wrapper,
+    header .menu-item.menu-item-has-children:hover .sub-menu {
+        display: block;
+    }
+    header .menu-item.menu-item-has-children .sub-menu {
+        display: none;
+    }
+    header .menu-item.menu-item-has-children:hover .sub-menu {
+        max-width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        /* flex-wrap: wrap; */
+        /* grid-template-columns: repeat(4, minmax(0, 1fr)); */
+        justify-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    header .menu-item.menu-item-has-children:hover .sub-menu li {
+        width: 25%;
+        text-align: center;
+    }
+    header .sub-menu li a {
+        text-align: center;
+        display: inline-block;
+        padding: 20px 18px;
+        text-underline-offset: 20px !important;
+    }
+    .main-header #searchform {
+        right: 40px;
+        width: 800px !important;
+        height: 0 !important;
+        transition: height 0.5s ease-in-out;
+        top: 80px;
+    }
+    .search-open #searchform {
+        height: 50px !important;
+    }
+    .main-header ul li a {
+        text-decoration-color: #d47a3400!important;
+        text-underline-offset: 41px;
+    }
+    footer {
+        background-image: url('../images/footer_bg.jpg');
+    }
+    .annual-impacts-section {
+        background-image: url(../images/org_dotted_line.png);
+    }
+    .welcome-section {
+        background-image: url(../images/triangle_bg.jpg);
+    }
+    .therapy-provision-section {
+        background-image: url(../images/therapy-banner.png);
+    }
+    .services-options-section {
+        background-image: url(../images/service-bg.jpg);
+    }
+    .leadership-section {
+        background-image: url(../images/org_dotted.png);
+    }
+    .why-rehab-section {
+        background-image: url(../images/why-rehab-bg.png);
+    }
+    .join-us-section {
+        background-image: url(../images/dotted_line.png);
+    }
+    .hero-section a:before {
+        right: -40px;
+        height: 54px
+    }
+    .hero-section a:after {
+        top: 0;
+    }
+    .menu-item.search-menu {
+        padding: 20px 18px 20px 50px;
+    }
+    .main-header ul li a:hover {
+        text-decoration-color: #d47a34!important;
+    }
+    .social-icons-copyrights li {
+        margin: 0 0px 0 40px;
+    }
+    section.hero-section .slick-dots {
+        bottom: 135px;
+        width: auto;
+        right: 50px;
+    }
+    .testimonials-section,
+    .contact-us-section,
+    .form-zone-section {
+        background-image: url('../images/blue_bg.jpg');
+    }
+    .testimonials-section .slick-slide {
+        margin: 45px 26px 80px;
+    }
+    .testimonials-section .slick-list {
+        margin: 0 -26px;
+    }
+    .quote-img:before {
+        width: 50px;
+        height: 54px;
+        top: 90px;
+        left: 15px;
+    }
+    .testimonials-section .slick-slide {
+        margin: 45px 15px 80px;
+        height: inherit;
+    }
+    .testimonials-section .slick-slide {
+        margin: 45px 26px 80px;
+    }
+    .testimonials-section .slick-list {
+        margin: 0 -26px;
+    }
+    .quote-img:before {
+        width: 50px;
+        height: 54px;
+        top: 90px;
+        left: 15px;
+    }
+    .testimonials-section .slick-slide {
+        margin: 45px 15px 80px;
+        height: inherit;
+    }
+    .wysiwig_double_lists ul:nth-child(2) {
+        padding-left: 2rem;
+    }
+    .single-content-section {
+        margin-top: -140px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width:1280px) {
+    .social-icons-copyrights li {
+        margin: 0 0px 0 20px;
+    }
+    .blogs-content p:last-child {
+        display: table;
+    }
+    .blogs-content p a:nth-child(4) {
+        left: 15px;
+        position: relative;
+    }
+    .wpsl-input label, #wpsl-radius label, #wpsl-category label {
+        width: 65px!important;
+    }
+    .blogs-content p a {
+        line-height: 14px;
+    }
+    .blogs-content p a:last-child {
+        word-break: break-all;
+    }
+    #wpsl-search-input {
+        width: 100px!important;
+    }
+    .trapezium {
+        border-bottom: 255px solid #00205c;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+    }
+    .menu-item.search-menu {
+        padding: 20px 7px 20px 18px;
+    }
+    .main-header ul li a {
+        padding: 40px 11px;
+    }
+    footer img {
+        width: 170px;
+    }
+    .full {
+        width: 99%!important;
+    }
+}
+
+@media screen and (min-width: 1281px) {
+    .trapezium {
+        border-bottom: 235px solid #00205c;
+        border-left: 80px solid transparent;
+        border-right: 80px solid transparent;
+    }
+    .yellow-icon .container:before {
+        right: 60px;
+        top: -60px;
+        width: 150px;
+        height: 140px;
+    }
+    .yellow-icon.right-before-icon .container:before,
+    .yellow-icon.right-bottom-before-icon .container:before {
+        right: 0px;
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .half {
+        display: inline-grid;
+        float: none;
+    }
+    .half.half-left,
+    .half.half-right {
+        position: relative;
+        right: 10px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .two-column-with-bg-image-orange-pattren-section:after {
+        margin-top: -80px;
+    }
+    .wpsl-input {
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 1620px) {
+    .trapezium {
+        border-bottom: 240px solid #00205c;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+    }
+    .occupational-therapy-banner {
+        margin-top: -110px;
+    }
+    section.hero-section .slick-dots {
+        bottom: 180px;
+    }
+    .therapy-provision-section,
+    .hero-section,
+    .inner-hero-section,
+    .bg-overlay-clip-path {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%, 0% 100%);
+    }
+    .two-column-with-bg-image-orange-pattren-section:after {
+        margin-top: -90px;
+    }
+    .inner-hero-section {
+        background-position: center!important;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .two-column-with-bg-image-orange-pattren-section:after {
+        margin-top: -105px;
+    }
+}
+
+.check-list ul li:before {
+    content: "\f058";
+    color: var(--bg-royal-blue);
+    display: block;
+    position: absolute;
+    left: -30px;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+}
+
+.check-list ul li {
+    position: relative;
+    padding-bottom: 25px;
+}
+
+.two-column-content-section:not(.bg_white_pattern,
+.white_with_double_circle) .wysiwig_content a,
+.two-column-with-bg-image-orange-pattren-section .wysiwig_content a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+/* safari only css */
+
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance: none) {
+        .lg\:object-cover.lg\:h-full {
+            object-fit: contain!important;
+            height: auto!important;
+        }
+    }
+}
+
+
+/* wysiwyg a tag */
+
+.wysiwig_content a {
+    color: var(--bg-dark-orange);
+}
+
+section:not(.two-columns-content) .wysiwig_content ul {
+    list-style: disc;
+    padding-left: 1rem;
+}
+#about_full_width_zone_182 .wysiwig_content a{
+    color:var(--bg-royal-blue);
+}

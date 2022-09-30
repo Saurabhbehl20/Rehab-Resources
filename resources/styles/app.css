@@ -1,0 +1,90 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@layer utilities {
+     :root {
+        --bg-dark-orange: #d47a34;
+        --bg-dark-blue: #39517e;
+        --bg-royal-blue: #222a59;
+        --bg-dark-navy: #00205c;
+    }
+    .bg-dark-orange {
+        background: var(--bg-dark-orange);
+    }
+    .bg-dark-blue {
+        background: var(--bg-dark-blue);
+    }
+    .bg-royal-blue {
+        background: var(--bg-royal-blue);
+    }
+    .bg-dark-navy {
+        background: var(--bg-dark-navy);
+    }
+    .orange-color {
+        color: var(--bg-dark-orange);
+    }
+    .royal-blue-color {
+        color: var(--bg-royal-blue);
+    }
+    .dark-navy-color {
+        color: var(--bg-dark-navy);
+    }
+    .dark-blue-color {
+        color: var(--bg-dark-blue);
+    }
+    .border-orange {
+        border-color: var(--bg-dark-orange);
+    }
+    .border-blue {
+        border-color: var(--bg-royal-blue);
+    }
+    .font-lato {
+        font-family: 'Lato', sans-serif;
+    }
+    .font-inter {
+        font-family: 'Inter', sans-serif;
+    }
+    .font-montserrat {
+        font-family: 'Montserrat', sans-serif;
+    }
+    .text-14 {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .text-16 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .text-18 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .text-24 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .text-28 {
+        font-size: 28px;
+        line-height: 42px;
+    }
+    .text-32 {
+        font-size: 32px;
+        line-height: 50px;
+    }
+    .text-35 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .text-40 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .text-48 {
+        font-size: 48px;
+        line-height: 68px;
+    }
+    .text-56 {
+        font-size: 56px;
+        line-height: 58px;
+    }
+}
